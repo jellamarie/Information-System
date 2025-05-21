@@ -114,21 +114,21 @@ namespace Information_System
             this.txtPaymentID = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txtCategoryId = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.TxtCategoryName = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.txtLogID = new System.Windows.Forms.TextBox();
-            this.TxtActionType = new System.Windows.Forms.TextBox();
-            this.txtTableName = new System.Windows.Forms.TextBox();
-            this.txtAction = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dgvCategories = new System.Windows.Forms.DataGridView();
+            this.TxtCategoryName = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtCategoryId = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtAction = new System.Windows.Forms.TextBox();
+            this.txtTableName = new System.Windows.Forms.TextBox();
+            this.TxtActionType = new System.Windows.Forms.TextBox();
+            this.txtLogID = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
@@ -139,9 +139,9 @@ namespace Information_System
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPayments)).BeginInit();
             this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategories)).BeginInit();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCategories)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -576,6 +576,7 @@ namespace Information_System
             this.dgvPayments.RowTemplate.Height = 24;
             this.dgvPayments.Size = new System.Drawing.Size(441, 199);
             this.dgvPayments.TabIndex = 11;
+            
             // 
             // button3
             // 
@@ -692,6 +693,51 @@ namespace Information_System
             this.tabPage5.UseVisualStyleBackColor = true;
             this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
             // 
+            // dgvCategories
+            // 
+            this.dgvCategories.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvCategories.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCategories.Location = new System.Drawing.Point(318, 28);
+            this.dgvCategories.Name = "dgvCategories";
+            this.dgvCategories.RowHeadersWidth = 51;
+            this.dgvCategories.RowTemplate.Height = 24;
+            this.dgvCategories.Size = new System.Drawing.Size(240, 150);
+            this.dgvCategories.TabIndex = 4;
+            // 
+            // TxtCategoryName
+            // 
+            this.TxtCategoryName.Location = new System.Drawing.Point(164, 63);
+            this.TxtCategoryName.Name = "TxtCategoryName";
+            this.TxtCategoryName.Size = new System.Drawing.Size(100, 22);
+            this.TxtCategoryName.TabIndex = 3;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(40, 70);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(48, 16);
+            this.label17.TabIndex = 2;
+            this.label17.Text = "Name";
+            // 
+            // txtCategoryId
+            // 
+            this.txtCategoryId.Location = new System.Drawing.Point(164, 28);
+            this.txtCategoryId.Name = "txtCategoryId";
+            this.txtCategoryId.Size = new System.Drawing.Size(100, 22);
+            this.txtCategoryId.TabIndex = 1;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(40, 35);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(87, 16);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Category Id";
+            // 
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.dataGridView1);
@@ -710,60 +756,54 @@ namespace Information_System
             this.tabPage6.Text = "Logs";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // label16
+            // dataGridView1
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(40, 35);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(87, 16);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Category Id";
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(404, 38);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(310, 150);
+            this.dataGridView1.TabIndex = 8;
             // 
-            // txtCategoryId
+            // txtAction
             // 
-            this.txtCategoryId.Location = new System.Drawing.Point(164, 28);
-            this.txtCategoryId.Name = "txtCategoryId";
-            this.txtCategoryId.Size = new System.Drawing.Size(100, 22);
-            this.txtCategoryId.TabIndex = 1;
+            this.txtAction.Location = new System.Drawing.Point(253, 166);
+            this.txtAction.Name = "txtAction";
+            this.txtAction.Size = new System.Drawing.Size(100, 22);
+            this.txtAction.TabIndex = 7;
             // 
-            // label17
+            // txtTableName
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(40, 70);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(48, 16);
-            this.label17.TabIndex = 2;
-            this.label17.Text = "Name";
+            this.txtTableName.Location = new System.Drawing.Point(253, 119);
+            this.txtTableName.Name = "txtTableName";
+            this.txtTableName.Size = new System.Drawing.Size(100, 22);
+            this.txtTableName.TabIndex = 6;
             // 
-            // TxtCategoryName
+            // TxtActionType
             // 
-            this.TxtCategoryName.Location = new System.Drawing.Point(164, 63);
-            this.TxtCategoryName.Name = "TxtCategoryName";
-            this.TxtCategoryName.Size = new System.Drawing.Size(100, 22);
-            this.TxtCategoryName.TabIndex = 3;
+            this.TxtActionType.Location = new System.Drawing.Point(253, 79);
+            this.TxtActionType.Name = "TxtActionType";
+            this.TxtActionType.Size = new System.Drawing.Size(100, 22);
+            this.TxtActionType.TabIndex = 5;
             // 
-            // label18
+            // txtLogID
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(40, 34);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(52, 16);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "Log ID";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
+            this.txtLogID.Location = new System.Drawing.Point(253, 34);
+            this.txtLogID.Name = "txtLogID";
+            this.txtLogID.Size = new System.Drawing.Size(100, 22);
+            this.txtLogID.TabIndex = 4;
             // 
-            // label19
+            // label21
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(40, 79);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(90, 16);
-            this.label19.TabIndex = 1;
-            this.label19.Text = "Action Type";
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(40, 182);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(90, 16);
+            this.label21.TabIndex = 3;
+            this.label21.Text = "Action Type";
             // 
             // label20
             // 
@@ -776,65 +816,26 @@ namespace Information_System
             this.label20.Text = "Table Name";
             this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
-            // label21
+            // label19
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(40, 182);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(90, 16);
-            this.label21.TabIndex = 3;
-            this.label21.Text = "Action Type";
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(40, 79);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(90, 16);
+            this.label19.TabIndex = 1;
+            this.label19.Text = "Action Type";
             // 
-            // txtLogID
+            // label18
             // 
-            this.txtLogID.Location = new System.Drawing.Point(253, 34);
-            this.txtLogID.Name = "txtLogID";
-            this.txtLogID.Size = new System.Drawing.Size(100, 22);
-            this.txtLogID.TabIndex = 4;
-            // 
-            // TxtActionType
-            // 
-            this.TxtActionType.Location = new System.Drawing.Point(253, 79);
-            this.TxtActionType.Name = "TxtActionType";
-            this.TxtActionType.Size = new System.Drawing.Size(100, 22);
-            this.TxtActionType.TabIndex = 5;
-            // 
-            // txtTableName
-            // 
-            this.txtTableName.Location = new System.Drawing.Point(253, 119);
-            this.txtTableName.Name = "txtTableName";
-            this.txtTableName.Size = new System.Drawing.Size(100, 22);
-            this.txtTableName.TabIndex = 6;
-            // 
-            // txtAction
-            // 
-            this.txtAction.Location = new System.Drawing.Point(253, 166);
-            this.txtAction.Name = "txtAction";
-            this.txtAction.Size = new System.Drawing.Size(100, 22);
-            this.txtAction.TabIndex = 7;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(404, 38);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(310, 150);
-            this.dataGridView1.TabIndex = 8;
-            // 
-            // dgvCategories
-            // 
-            this.dgvCategories.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvCategories.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCategories.Location = new System.Drawing.Point(318, 28);
-            this.dgvCategories.Name = "dgvCategories";
-            this.dgvCategories.RowHeadersWidth = 51;
-            this.dgvCategories.RowTemplate.Height = 24;
-            this.dgvCategories.Size = new System.Drawing.Size(240, 150);
-            this.dgvCategories.TabIndex = 4;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(40, 34);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(52, 16);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "Log ID";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // Form1
             // 
@@ -859,10 +860,10 @@ namespace Information_System
             ((System.ComponentModel.ISupportInitialize)(this.dgvPayments)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategories)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCategories)).EndInit();
             this.ResumeLayout(false);
 
         }
